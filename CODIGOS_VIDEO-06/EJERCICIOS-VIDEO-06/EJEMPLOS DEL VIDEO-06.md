@@ -1,7 +1,7 @@
 PRACTICA  CON ESTOS EJEMPLOS DEL VIDEO-06
 
   Exercises
-Use the following exercises to improve your knowledge of the material:
+Use the following exercises to improve your knowledge 
 
 Exercise 1: Explore TF-IDF similarity.
 Objective : Run the baseline TF-IDF demo, and observe cosine-similarity patterns.
