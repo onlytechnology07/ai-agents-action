@@ -5,12 +5,12 @@ Este repositorio contiene el código de ejemplo del libro AI Agents in Action, S
 Instrucciones de configuración
 ## 1. Clonar el repositorio
 Para comenzar, clona este repositorio en tu equipo local:
-```baSH
+```bash
 git clone https://github.com/cxbxmxcx/AI-Agent-Workflows.git
 cd AI-Agent-Workflows
 ```
 
-2. Instalar los requisitos previos
+### 2. Instalar los requisitos previos
 - Python 3.11 o posterior. Las versiones fijadas de las dependencias se han probado con Python 3.11, 3.13 y 3.14.
 - Node.js 20 o posterior. Los servidores MCP que los ejemplos inician con npx se ejecutan en Node.js (consulta el apéndice B).
 - Graphviz. El capítulo 4 genera gráficos de agentes mediante draw_graph(...).view(), lo cual requiere que los programas de Graphviz estén disponibles en tu variable PATH, no solamente el paquete de Python. Puedes instalarlos desde graphviz.org.
@@ -18,13 +18,15 @@ cd AI-Agent-Workflows
 3. Crear tu entorno
 Este proyecto requiere Python 3.11 o posterior. Crea y activa un entorno virtual de Python:
 En Windows:
+```bash
 python -m venv venv
 venv\Scripts\activate
-
+```
 En macOS/Linux:
+```bash
 python3 -m venv venv
 source venv/bin/activate
-
+```
 Si prefieres utilizar un entorno externo de Python, asegúrate de configurar la ruta de Python en VS Code:
 1. Abre la Paleta de comandos (Ctrl+Shift+P o Cmd+Shift+P en macOS).
 2. Busca "Python: Select Interpreter".
@@ -36,8 +38,9 @@ Si tienes VS Code, simplemente puedes iniciar la depuración (presiona F5) para 
 La tarea Install requirements se ejecuta antes de cada inicio e instala cualquier dependencia que falte de las especificadas en requirements.txt. Por eso, la primera ejecución puede tardar unos minutos, mientras que las siguientes se iniciarán inmediatamente.
 Opción B: Instalación manual
 Como alternativa, puedes instalar manualmente las dependencias utilizando pip:
+```bash
 pip install -r requirements.txt
-
+```
 El archivo requirements.txt fija las versiones exactas con las que se han probado los ejemplos. Mantén estas versiones sin cambios: en particular, mcp debe permanecer por debajo de la versión 2.0, porque la versión 2 eliminó la clase FastMCP, sobre la cual están construidos los servidores de los capítulos 3 y 4.
 5. Configurar el entorno
 Copia el archivo .env.example en un archivo llamado .env dentro del directorio raíz y completa tus claves:
