@@ -50,8 +50,8 @@ Copia el archivo .env.example en un archivo llamado .env dentro del directorio r
 'BRAVE_API_KEY'=your_brave_api_key
 'OPENAI_DEFAULT_MODEL'=gpt-5.1
 ```
-- 'OPENAI_API_KEY' es necesaria para todos los ejemplos. Puedes obtener una clave API desde la página de claves API de OpenAI.
-- ' BRAVE_API_KEY'  es necesaria para los agentes de investigación de los capítulos 9 y 10, que realizan búsquedas en la web mediante el servidor Brave Search MCP. Puedes obtener una clave desde la página de Brave Search API.
+- OPENAI_API_KEY es necesaria para todos los ejemplos. Puedes obtener una clave API desde la página de claves API de OpenAI.
+- BRAVE_API_KEY  es necesaria para los agentes de investigación de los capítulos 9 y 10, que realizan búsquedas en la web mediante el servidor Brave Search MCP. Puedes obtener una clave desde la página de Brave Search API.
 - OPENAI_DEFAULT_MODEL establece el modelo que utilizarán todos los agentes que no especifiquen uno. Sin esta variable, el SDK de Agents utiliza su propio modelo predeterminado, que cambia de una versión a otra.
 VS Code carga automáticamente el archivo .env cuando inicias un ejemplo con F5.
 
@@ -62,8 +62,9 @@ python -m dotenv run -- python chapter_04/01_single_agent_multiple_mcp.py
 Ejecuta los ejemplos desde el directorio raíz del repositorio, porque varios de ellos abren archivos utilizando rutas relativas a ese directorio.
 
 Por ejemplo:
+```
 python chapter_02/01_first_agent.py
-
+```
 Esto ejecutará el agente y mostrará el resultado en la terminal.
 Servidores MCP durante la primera ejecución
 Muchos ejemplos inician servidores MCP utilizando npx (Node.js) o uvx (Python).
@@ -71,8 +72,9 @@ Muchos ejemplos inician servidores MCP utilizando npx (Node.js) o uvx (Python).
 La primera vez que un ejemplo inicia un servidor, npx o uvx lo descarga. Este proceso puede tardar desde unos segundos hasta un minuto o más. Los ejemplos esperan el tiempo suficiente para que se complete la descarga.
 
 Para descargar previamente todos los servidores, ejecuta:
+```
 python tools/check_repo.py --servers
-
+```
 Estructura del repositorio
 - chapter_02 a chapter_11: contienen el código correspondiente a cada capítulo del libro. El directorio chapter_08/microservices/ contiene la implementación mediante Docker Compose del ejemplo 8.5.
 - bonus_projects/: contiene ejemplos adicionales que van más allá del contenido del libro.
