@@ -44,9 +44,9 @@ pip install -r requirements.txt
 El archivo requirements.txt fija las versiones exactas con las que se han probado los ejemplos. Mantén estas versiones sin cambios: en particular, mcp debe permanecer por debajo de la versión 2.0, porque la versión 2 eliminó la clase FastMCP, sobre la cual están construidos los servidores de los capítulos 3 y 4.
 5. Configurar el entorno
 Copia el archivo .env.example en un archivo llamado .env dentro del directorio raíz y completa tus claves:
-OPENAI_API_KEY=your_openai_api_key
-BRAVE_API_KEY=your_brave_api_key
-OPENAI_DEFAULT_MODEL=gpt-5.1
+'OPENAI_API_KEY'=your_openai_api_key
+'BRAVE_API_KEY'=your_brave_api_key
+'OPENAI_DEFAULT_MODEL'=gpt-5.1
 
 - OPENAI_API_KEY es necesaria para todos los ejemplos. Puedes obtener una clave API desde la página de claves API de OpenAI.
 - BRAVE_API_KEY es necesaria para los agentes de investigación de los capítulos 9 y 10, que realizan búsquedas en la web mediante el servidor Brave Search MCP. Puedes obtener una clave desde la página de Brave Search API.
