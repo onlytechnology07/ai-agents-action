@@ -3,10 +3,12 @@ CODIGO PARA AGENTES DE IA
 
 Este repositorio contiene el código de ejemplo del libro AI Agents in Action, Second Edition (Manning). El código demuestra cómo crear y ejecutar agentes de IA utilizando el SDK de OpenAI Agents y el Protocolo de Contexto de Modelo (MCP).
 Instrucciones de configuración
-1. Clonar el repositorio
+## 1. Clonar el repositorio
 Para comenzar, clona este repositorio en tu equipo local:
+```baSH
 git clone https://github.com/cxbxmxcx/AI-Agent-Workflows.git
 cd AI-Agent-Workflows
+```
 
 2. Instalar los requisitos previos
 - Python 3.11 o posterior. Las versiones fijadas de las dependencias se han probado con Python 3.11, 3.13 y 3.14.
