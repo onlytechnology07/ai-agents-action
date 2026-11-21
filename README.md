@@ -6,8 +6,8 @@ Instrucciones de configuración
 ## 1. Clonar el repositorio
 Para comenzar, clona este repositorio en tu equipo local:
 ```bash
-git clone https://github.com/cxbxmxcx/AI-Agent-Workflows.git
-cd AI-Agent-Workflows
+git clone https://github.com/onlytechnology07/ai-agents-action
+cd ai-agents-action
 ```
 
 ### 2. Instalar los requisitos previos
